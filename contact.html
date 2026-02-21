@@ -1,0 +1,178 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Trevor Coffee Land | Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        .navigation {
+        position: fixed;
+        top: 0;
+        
+        width: 100%;
+        height: 70px;
+        background: rgba(59, 31, 15, 0.9);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+
+    .navigation.scrolled {
+        background: #2b1408;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+
+
+
+    .contact-hero {
+        height: 45vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url('images/contact-banner.jpg') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 70px; 
+    }
+
+    .contact-hero h1 {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+
+    .contact-container {
+        padding: 90px 60px;
+        background: #faf7f3;
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #3b1f0f;
+    }
+
+    .contact-info p {
+        margin-bottom: 15px;
+        color: #555;
+        line-height: 1.7;
+    }
+
+    .contact-form {
+        flex: 1;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+        color: #3b1f0f;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #c89b3c;
+    }
+
+    .contact-form button {
+        background: #3b1f0f;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+        background: #c89b3c;
+    }
+
+
+    @media (max-width: 900px) {
+        .contact-container {
+            flex-direction: column;
+            padding: 60px 30px;
+        }
+    }
+
+
+    </style>
+    <body>
+    <header class="navbar">
+        <div class="logo">
+            ☕ THE TAVERN
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Full Menu</a>
+            <a href="loc.html">Our Locations</a>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Host an Event</a>
+        </nav>
+
+        <a href="order.html" class="btn-outline">Order Online</a>
+    </header>
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p><strong>Address:</strong> 123 Coffee Street, City</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> info@trevorcoffee.com</p>
+            <p>
+                We'd love to hear from you! Whether you have questions about 
+                our menu, catering, or locations — reach out anytime.
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+    </body>
+    </html>

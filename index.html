@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tavern</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="navbar">
+    <div class="logo">
+        ☕ THE TAVERN
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Full Menu</a>
+        <a href="loc.html">Our Locations</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Host an Event</a>
+    </nav>
+
+    <a href="order.html" class="btn-outline">Order Online</a>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <p class="small-text">LOCALLY-OWNED COFFEE SHOP SERVING CLEVELAND</p>
+
+        <h1>
+            Brewing Hope &<br>
+            Great Coffee in the<br>
+            heart of Buckeye
+        </h1>
+
+        <p class="description">
+            Once a bar, now a beacon of ambition — The Tavern Coffee House is a
+            unique & eclectic café revitalizing the Buckeye-Shaker neighborhood
+            through community, careers, and coffee.
+        </p>
+
+        <p class="hours">Open 8am – 1pm Monday-Friday</p>
+
+        <div class="hero-buttons">
+            <a href="order.html" class="btn-light">Order Ahead →</a>
+            <a href="menu.html" class="btn-dark">Our Menu →</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/coffee.png" alt="Coffee cup">
+    </div>
+</section>
+
+<section class="featured">
+
+    <div class="featured-left">
+        <p class="small-text">FEATURED SPECIAL</p>
+
+        <h2>Serving up Something for Everyone.</h2>
+
+        <p>
+            From bold brews to sweet sips, every drink at The Tavern is crafted
+            with care and community in mind. Whether you're grabbing your go-to
+            latte or trying something new like our signature Humble Mornings Blend,
+            there's something on the menu to make everyone feel at home.
+        </p>
+
+        <a href="order.html" class="btn-dark">Start a Pickup Order</a>
+    </div>
+
+    <div class="featured-right">
+        <img src="images/coffee2.png" alt="Signature Latte">
+
+        <div class="product-card">
+            <h3>The "Tavern's Favorite" Signature Latte</h3>
+            <p class="price">$5.00</p>
+            <p>Caffeine Level 100 mg</p>
+            <p>Our strong latte with any available syrup. We got you.</p>
+            <a href="menu.html">Order Ahead →</a>
+        </div>
+    </div>
+
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    const images = document.querySelectorAll(".featured-right img");
+    images.forEach(img => observer.observe(img));
+
+});
+</script>
+
+</body>
+</html>

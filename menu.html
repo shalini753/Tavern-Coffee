@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Tavern | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            ☕ THE TAVERN
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active-link">Full Menu</a>
+            <a href="loc.html">Our Locations</a>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Host an Event</a>
+        </nav>
+
+        <a href="order.html" class="btn-outline">Order Online</a>
+    </header>
+
+
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <p class="small-text">HANDCRAFTED DAILY</p>
+            <h1>Our Full Menu</h1>
+            <p class="description">
+                From bold espresso classics to freshly baked pastries, every item is
+                crafted with care and intention.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="menu-container">
+
+        <h2 class="menu-title">Freshly Brewed & Baked</h2>
+
+        <div class="menu-filters">
+            <button class="active-filter">All</button>
+            <button>Coffee</button>
+            <button>Pastries</button>
+        </div>
+
+        <div class="menu-grid">
+
+                <div class="menu-card">
+                    <img src="images/maplelatte.png" alt="Classic Latte">
+                    <h3>Classic Latte</h3>
+                    <p>Literally 'milk coffee' in Italian, a latte is the perfect balance of strong espresso and smooth, steamed milk</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹250</span>
+                        <button onclick="addToOrder('Classic Latte')">Add</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/crossiant.png" alt="Croissant">
+                    <h3>Butter Croissant</h3>
+                    <p>A perfect, authentic French breakfast pastry—crisp on the outside, tender on the inside, and rich with real butter.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹150</span>
+                        <button onclick="addToOrder('Butter Croissant')">Add</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/cappucino.png" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>A perfect, equal harmony of one-third espresso, one-third steamed milk, and one-third thick foam</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹250</span>
+                        <button onclick="addToOrder('Cappuccino')">Add</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/muffins.png" alt="Blueberry Muffin">
+                    <h3> Muffin</h3>
+                    <p>A warm, golden-brown quick bread with a tender crumb, bursting with fresh flavors and a perfectly domed, sugary top.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹150</span>
+                        <button onclick="addToOrder('Muffin')">Add</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="images/coffeebag2.png" alt="Blueberry Muffin">
+                    <h3> Coffee Bag</h3>
+                    <p>It’s the essential, pre-crushed step between a roasted bean and your morning cup</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹500</span>
+                        <button onclick="addToOrder('Coffee Bag')">Add</button>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/americano.png" alt="Americano">
+                    <h3>Americano</h3>
+                    <p>A simple, bold blend of rich espresso and hot water, delivering a smooth, full-bodied coffee experience with a robust flavor and a velvety finish.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹200</span>
+                        <button onclick="addToOrder('Americano')">Add</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="images/blueberrymuffin.png" alt="Blueberry Muffin">
+                    <h3>Blueberry Muffin</h3>
+                    <p>A warm, golden-brown quick bread with a tender crumb, bursting with fresh flavors and a perfectly domed, sugary top.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹150</span>
+                        <button onclick="addToOrder('Blueberry Muffin')">Add</button>    
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="images/vanilalatte.png" alt="Classic Latte">
+                    <h3>Vanilla Latte</h3>
+                    <p>A creamy blend of rich espresso, steamed milk,a touch of sweet vanilla syrup, creating a comforting coffee experience.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹250</span>
+                        <button onclick="addToOrder('Vanilla Latte')">Add</button>    
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="images/chocolatemuffin.png" alt="Blueberry Muffin">
+                    <h3>Chocolate Muffin</h3>
+                    <p>A warm, golden-brown quick bread with a tender crumb, bursting with fresh flavors and a perfectly domed, sugary top.</p>
+
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹150</span>
+                        <button onclick="addToOrder('Chocolate Muffin')">Add</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="images/caramel.png" alt="Classic Latte">
+                    <h3>Caramel Latte</h3>
+                    <p>A creamy blend of rich espresso, steamed milk,a touch of sweet caramel syrup, creating a smooth and comforting coffee experience.</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">₹250</span>
+                        <button onclick="addToOrder('Caramel Latte')">Add</button>
+                    </div>
+                </div>
+            <div class="menu-card">
+                <img src="images/hazelnut.png" alt="Classic Latte">
+                <h3>Hazelnut Latte</h3>
+                <p>A creamy blend of rich espresso, steamed milk, and a touch of sweet hazelnut syrup, creating a smooth and comforting coffee experience.</p>
+
+                <div class="menu-bottom">
+                    <span class="menu-price">₹250 </span>
+                    <button onclick="addToOrder('Hazelnut Latte')">Add</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/double.png" alt="Blueberry Muffin">
+                <h3>Double Chocolate Muffin</h3>
+                <p>A warm, golden-brown quick bread with a tender crumb, bursting with fresh flavors and a perfectly domed, sugary top.</p>
+
+                <div class="menu-bottom">
+                    <span class="menu-price">₹150</span>
+                    <button onclick="addToOrder('Double Chocolate Muffin')">Add</button>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="menu-cta">
+        <h2>Ready for your next cup?</h2>
+        <a href="order.html" class="btn-dark">Start Your Order →</a>
+    </section>
+
+    <script>
+    function addToOrder(name) {
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const existing = cart.find(item => item.name === name);
+
+        if (existing) {
+            existing.quantity += 1;
+        } else {
+            cart.push({
+                name: name,
+                quantity: 1
+            });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        console.log("Cart Updated:", cart);
+
+        window.location.href = "order.html";
+    }
+    </script>
+
+</body>
+</html>

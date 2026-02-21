@@ -1,0 +1,271 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Trevor Coffee Land | About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+    .navigation {
+        position: fixed;
+        top: 0;
+        
+        width: 100%;
+        height: 70px;
+        background: rgba(59, 31, 15, 0.9);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+
+    .navigation.scrolled {
+        background: #2b1408;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .about-hero {
+        height: 50vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url('images/cafe.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin-top: 70px;
+        font-family:'Playfair Display', serif;
+    }
+
+
+
+    .about-hero h1 {
+        font-size: 2.9rem;
+        letter-spacing: 2px;
+    }
+
+    .about-hero h1:hover {
+        color: #f0c27b;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+
+    
+    .about-section {
+        padding: 80px 60px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-text h2 {
+        margin-bottom: 20px;
+        color: #3b1f0f;
+    }
+
+    .about-text p {
+        line-height: 1.8;
+        color: #555;
+    }
+
+    .about-image {
+        flex: 1;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 120px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .mission-vision {
+        background: #f4ece4;
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    .mv-grid {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .mv-card {
+        background: white;
+        padding: 30px;
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .mv-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .mv-card h3 {
+        color: #3b1f0f;
+        margin-bottom: 15px;
+    }
+    .why-about {
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    .why-about h2 {
+        margin-bottom: 30px;
+    }
+
+    .why-about p {
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    .team-section {
+        padding: 80px 60px;
+        background: #faf7f3;
+        text-align: center;
+    }
+
+    .team-grid {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .team-card {
+        width: 250px;
+    }
+
+    .team-card img {
+        width: 50%;
+        border-radius: 100%;
+        margin-bottom: 15px;
+    }
+
+    .team-card img:hover {
+        transform: scale(1.4);
+        transition: 0.3s;
+    }
+
+    .team-card h4 {
+        color: #3b1f0f;
+    }
+
+    @media (max-width: 900px) {
+        .about-section {
+            padding: 60px 30px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .about-section {
+            flex-direction: column;
+        }
+
+        .about-hero h1 {
+            font-size: 2rem;
+        }
+    }
+
+    </style>
+    <body>
+
+    <header class="navbar">
+    <div class="logo">
+        ☕ THE TAVERN
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Full Menu</a>
+        <a href="loc.html">Our Locations</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Host an Event</a>
+    </nav>
+
+    <a href="order.html" class="btn-outline">Order Online</a>
+    </header>
+    <section class="about-hero">
+        <h1>Our Story</h1>
+    </section>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Passion Behind Every Cup</h2>
+            <p>
+                Trevor Coffee Land was founded with a simple vision — to create a space 
+                where coffee lovers can experience premium quality brews in a warm and 
+                welcoming atmosphere. Our beans are ethically sourced and freshly roasted 
+                to ensure rich aroma and consistency in every cup.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/coffeebag2.png ">
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <h2>Our Commitment</h2>
+
+        <div class="mv-grid">
+            <div class="mv-card">
+                <h3>Our Mission</h3>
+                <p>To serve handcrafted coffee with exceptional quality and hospitality.</p>
+            </div>
+
+            <div class="mv-card">
+                <h3>Our Vision</h3>
+                <p>To become a trusted community space that brings people together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-about">
+        <h2>Why Choose Us?</h2>
+        <p>
+            We focus on quality ingredients, skilled baristas, and creating an inviting
+            ambiance that makes every visit memorable. Coffee is not just a beverage for us —
+            it is an experience.
+        </p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="team/t1.png">
+                <h4>Head Barista</h4>
+            </div>
+
+            <div class="team-card">
+                <img src="team/t2.png">
+                <h4>Roasting Expert</h4>
+            </div>
+
+            <div class="team-card">
+                <img src="team/t3.png">
+                <h4>Operations Manager</h4>
+            </div>
+        </div>
+    </section>
+
+
+    </body>
+    </html>
